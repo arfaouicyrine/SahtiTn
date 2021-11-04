@@ -1,0 +1,225 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,200&display=swap');
+
+/* variables */
+:root {
+
+    --clr-primary: #6C63FF;
+    --clr-primary-light: #97AABD;
+    --clr-text-primary: #202d49;
+    --clr-text-secondary: #ccc;
+    --clr-bg-light: #fafafa;
+
+    /*  Typography*/
+    --font-family: "Mulish", sans-serif;
+    --fs-lg: 1.5rem
+        /* 24px */
+        --fs-md:1rem;
+    --fs-sm: 0.875;
+    --fe-bold: 900;
+    --fw-md: 600;
+}
+
+/* overides */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: var(--fw-md);
+    color: var(--clr-text-primary);
+    background-color: var(--clr-primary-light);
+}
+
+h1 {
+    font-weight: var(--fe-bold);
+    font-size: var(--fs-lg);
+}
+
+p {
+    color: #C96567;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/*  end of overides */
+.active {
+    display: block !important;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    padding: 1rem 1.5rem;
+
+}
+
+.image-wrapper {
+    margin-top: 2rem;
+    justify-self: start;
+    max-width: 400px;
+}
+
+.form-wrapper {
+    justify-self: center;
+    margin-top: -25rem;
+    padding: 4rem;
+    width: 60%;
+    margin-left: auto;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0px 20px 50px -40px #000;
+    height: max-content;
+}
+
+.form {
+    display: none;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.form-subtitle {
+    margin-bottom: 1rem;
+}
+
+.form-input {
+    margin-bottom: 1rem;
+}
+
+.form-input>input {
+    width: 100%;
+    outline: none;
+    border-color: var(--clr-text-secondary);
+    border-style: solid;
+    border-radius: 50px;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: var(--font-family);
+    transition: border-color 0.5s ease-in-out;
+}
+
+.form-input>input:focus {
+    border-color: #C96567;
+
+}
+
+.button {
+    display: block;
+    width: 100%;
+    border-color: #C96567;
+    border: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 30px;
+    background-color: #C96567;
+    text-align: center;
+    font-size: var(--fw-md);
+    justify-content: center;
+    color: white;
+    transition: box-shadow 0.5s ease, transform 0.2s ease-in;
+}
+
+button:hover {
+    box-shadow: 0 20px 30px -11px var(--clr-primary-light);
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+
+.button-filled {
+    color: white;
+
+
+}
+
+.button-outlined {
+    border-color: #6C63FF;
+    border-style: solid;
+    color: #C96567;
+
+}
+
+body>div>div.form-wrapper>form>div>div:nth-child(8) {
+    width: 100%;
+    outline: none;
+    border-color: var(--clr-text-secondary);
+    border-style: solid;
+    border-radius: 50px;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: var(--font-family);
+    transition: border-color 0.5s ease-in-out;
+
+}
+
+body>div>div.form-wrapper>form>div>div:nth-child(8):focus {
+    border-color: #C96567;
+}
+
+body>div>div.form-wrapper>form>div>div:nth-child(10) {
+    width: 100%;
+    outline: none;
+    border-color: var(--clr-text-secondary);
+    border-style: solid;
+    border-radius: 50px;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: var(--font-family);
+    transition: border-color 0.5s ease-in-out;
+
+}
+
+
+#role_as {
+    float: right;
+    border: none;
+    font-weight: 70;
+    border-color: #ccc;
+    width: 50%;
+    border-radius: 50px;
+    font-family: var(--font-family);
+    color: #C96567;
+}
+
+#location_id {
+    float: right;
+    border: none;
+    font-weight: 70;
+    border-color: #ccc;
+    width: 50%;
+    border-radius: 50px;
+    font-family: var(--font-family);
+    color: #C96567;
+
+}
+
+#gender {
+    width: 100%;
+    outline: none;
+    border-color: var(--clr-text-secondary);
+    border-style: solid;
+    border-radius: 50px;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: var(--font-family);
+    transition: border-color 0.5s ease-in-out;
+}

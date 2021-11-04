@@ -1,0 +1,59 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+
+/*  Typography*/
+:root {
+    --font-family: "Mulish",
+        sans-serif;
+    --fs-lg: 1.5rem
+        /* 24px */
+        --fs-md:1rem;
+    --fs-sm: 0.875;
+    --fe-bold: 900;
+    --fw-md: 600;
+}
+
+.admin-content {
+    flex: 8;
+    height: 100%;
+    padding: 40px 100px, 100px;
+    overflow-y: scroll;
+}
+
+.admin-content .page-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #C96567;
+    font-family: 'Benne', serif;
+    font-size: 2.5rem;
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+}
+
+body>div.main-content>div>div.content>table>thead>tr>th {
+    font-family: var(--font-family);
+    font-size: 0.7rem;
+
+}
+
+body>div.main-content>div>div.content>div>ul>li.page-item.active>span {
+    color: #000;
+    background-color: #C96567;
+}
+
+
+
+
+body>div.main-content>div>div>div>div>form>div:nth-child(6)>button {
+    background-color: #C96567;
+    border-color: #C96567;
+    border-radius: 50px;
+    padding: 5px;
+    margin-top: 10px;
+
+
+
+}

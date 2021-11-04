@@ -1,0 +1,106 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,200&display=swap');
+
+body {
+    font-family: "Mulish", sans-serif;
+    background-color: #97AABD;
+}
+
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    padding: 1rem 1.5rem;
+
+}
+
+.image-wrapper {
+    margin-top: 2rem;
+    justify-self: start;
+    max-width: 400px;
+    margin-top: 200px;
+}
+
+.form-wrapper {
+    justify-self: center;
+    margin-top: 45px;
+    padding: 4rem;
+    width: 60%;
+    margin-left: auto;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0px 20px 50px -40px #000;
+    height: max-content;
+}
+
+.signin-text {
+    color: #C96567;
+    font-style: normal;
+    font-weight: 600 !important;
+
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-color: #ccc !important;
+    border-style: bold;
+    border-radius: 50px;
+    height: 50px;
+    box-shadow: 0px 20px 50px -40px #000;
+    padding: 0px !important;
+    color: #97AABD;
+    background-clip: padding-box;
+}
+
+
+
+.btn-class {
+    display: block;
+    width: 100%;
+    border-color: #C96567;
+    border: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 30px;
+    background-color: #C96567;
+    text-align: center;
+    font-size: var(--fw-md);
+    justify-content: center;
+    color: white;
+    transition: box-shadow 0.5s ease, transform 0.2s ease-in;
+}
+
+
+.form-input {
+    margin-bottom: 1rem;
+}
+
+.form-input>input {
+    width: 100%;
+    outline: none;
+    border-color: #ccc;
+    border-style: solid;
+    border-radius: 50px;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: var(--font-family);
+    transition: border-color 0.5s ease-in-out;
+}
+
+.form-input>input:focus {
+    border-color: #C96567;
+
+}
